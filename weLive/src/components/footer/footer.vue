@@ -39,9 +39,9 @@
 			flex: 1
 			&.active
 				.icon
-					color: #00aaff
+					color: #0af
 				.text
-					color: #00aaff
+					color: #0af
 			.icon
 				text-align: center
 				font-size: 20px

@@ -1,6 +1,7 @@
 <template>
 	<div id="home" ref="home">
 		<div>
+			<v-header :header="header"></v-header>
 			<slider>
 				<div class="slide-item" v-for="(item,index) in slider"><img :src="item"></div>
 			</slider>
@@ -45,11 +46,15 @@
 <script>	
 	import BScroll from 'better-scroll'
 	import Slider from '@/components/slider/slider'
+	import VHeader from '@/components/header/header'
 
 	export default {
 		name:'home',
 		data() {
 			return {
+        header: {
+          title: '微邻'
+        },
 				myBScroll: null,
 				slider: [
 					'../../static/image/bg_1.png',
@@ -76,6 +81,7 @@
 			}
 		},
 		components: {
+			VHeader,
 			Slider
 		}
 	}
@@ -87,7 +93,7 @@
 	#home
 		width: 100%
 		position: absolute
-		top: 44px
+		top: 0
 		left: 0
 		bottom: 49px
 		overflow: hidden
@@ -110,13 +116,13 @@
 					&.icon-music
 						color: #ff4343	
 					&.icon-mobile
-						color: #00aaff	
+						color: #0af
 					&.icon-location
 						color: #5ed123
 					&.icon-man-woman
 						color: #de1e7c		
 					&.icon-truck
-						color: #00aaff
+						color: #0af
 					&.icon-cart
 						color: #ffab19
 				.text

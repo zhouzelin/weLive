@@ -5,6 +5,7 @@
 </template>
 
 <script>
+
 	export default {
 		name: 'header',
 		props: {
@@ -13,18 +14,27 @@
 			}
 		},
 		methods: {
-
+			goback() {
+				
+			}
 		}
 	}
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
 	#header
-		height: 44px
-		background: #00aaff
+		height 44px
+		background #00aaff
+		display flex
+		.icon
+			flex 0 0 40px
+			color #fff
+			line-height 44px
+			text-align center
 		.title
-			text-align: center
-			font-size: 18px
-			color: #ffffff
-			line-height: 44px
+			flex-grow 1
+			text-align center
+			font-size 18px
+			color #ffffff
+			line-height 44px
 </style>

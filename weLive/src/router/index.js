@@ -4,6 +4,7 @@ import Home from '@/components/home/home'
 import Group from '@/components/group/group'
 import Discovery from '@/components/discovery/discovery'
 import User from '@/components/user/user'
+import Userinfo from '@/components/user/userinfo'
 
 Vue.use(Router)
 
@@ -29,6 +30,10 @@ export default new Router({
     {
       path: '/user',
       component: User
+    },
+    {
+      path: '/user/userinfo',
+      component: Userinfo
     }
   ]
 })

@@ -186,11 +186,13 @@
       position: relative
       overflow: hidden
       white-space: nowrap
+      height: 100%;
       .slide-item
         float: left
         box-sizing: border-box
         overflow: hidden
         text-align: center
+        height: 100%;
         a
           display: block
           width: 100%
@@ -200,7 +202,7 @@
           display: block
           width: 100%
           height: 100%
-          object-fit: contain
+          object-fit: cover
     .dots
       position: absolute
       right: 0
