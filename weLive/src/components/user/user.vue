@@ -62,7 +62,7 @@
 	#user
 		position absolute
 		left 0
-		top 0
+		top 0 
 		bottom 49px
 		overflow hidden
 		width 100%

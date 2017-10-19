@@ -1,6 +1,8 @@
 <template>
 	<div id="header">
+		<div v-if="header.licon" class="left-icon" :class="header.licon"></div>
 		<div class="title">{{header.title}}</div>
+		<div v-if="header.ricon" class="right-icon" :class="header.ricon"></div>
 	</div>
 </template>
 
@@ -25,16 +27,22 @@
 	#header
 		height 44px
 		background #00aaff
-		display flex
-		.icon
-			flex 0 0 40px
-			color #fff
+		position relative
+		font-size 18px
+		color #fff
+		.left-icon
+			position absolute
+			left 10px
+			top 0 
+			height 44px
 			line-height 44px
-			text-align center
+		.right-icon
+			position absolute
+			right 10px
+			top 0 
+			height 44px
+			line-height 44px 
 		.title
-			flex-grow 1
 			text-align center
-			font-size 18px
-			color #ffffff
 			line-height 44px
 </style>
