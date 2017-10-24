@@ -40,6 +40,7 @@
 				</div>
 			</div>
 		</div>
+		<v-footer></v-footer>
 	</div>
 </template>
 
@@ -47,6 +48,7 @@
 	import BScroll from 'better-scroll'
 	import Slider from '@/components/slider/slider'
 	import VHeader from '@/components/header/header'
+	import VFooter from '@/components/footer/footer'
 
 	export default {
 		name:'home',
@@ -82,7 +84,8 @@
 		},
 		components: {
 			VHeader,
-			Slider
+			Slider,
+			VFooter
 		}
 	}
 </script>

@@ -3,7 +3,6 @@
     <keep-alive>
       <router-view></router-view>
     </keep-alive>
-    <v-footer></v-footer>
   </div> 
 </template>
 
@@ -15,8 +14,7 @@
   export default {
     name: 'app',
     components: {
-      VHeader,
-      VFooter
+      VHeader
     }
   }
 </script>

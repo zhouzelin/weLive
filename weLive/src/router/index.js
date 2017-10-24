@@ -5,6 +5,7 @@ import Group from '@/components/group/group'
 import Discovery from '@/components/discovery/discovery'
 import User from '@/components/user/user'
 import Userinfo from '@/components/user/userinfo'
+import GroupCreate from '@/components/group/create'
 
 Vue.use(Router)
 
@@ -22,6 +23,10 @@ export default new Router({
     {
       path: '/group',
       component: Group
+    },
+    {
+      path: '/group/create',
+      component: GroupCreate
     },
     {
       path: '/discovery',

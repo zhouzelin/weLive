@@ -1,8 +1,9 @@
 <template>
 	<div id="header">
-		<div v-if="header.licon" class="left-icon" :class="header.licon"></div>
+		<router-link tag="div" :to="header.leftGo||'/'" v-if="header.licon" class="left-icon" :class="header.licon"></router-link>
 		<div class="title">{{header.title}}</div>
-		<div v-if="header.ricon" class="right-icon" :class="header.ricon"></div>
+		<router-link tag="div" :to="header.rightGo||'/'" v-if="header.ricon" class="right-icon" :class="header.ricon"></router-link>
+		<slot></slot>
 	</div>
 </template>
 
@@ -16,9 +17,7 @@
 			}
 		},
 		methods: {
-			goback() {
-				
-			}
+			
 		}
 	}
 </script>

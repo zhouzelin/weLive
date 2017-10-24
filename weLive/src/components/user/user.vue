@@ -35,11 +35,13 @@
 				<span class="text">设置</span>
 			</div>
 		</div>
+		<v-footer></v-footer>
 	</div>
 </template>
 
 <script>
 	import VHeader from '@/components/header/header'
+	import VFooter from '@/components/footer/footer'
 
 	export default {
 		name: 'user',
@@ -51,7 +53,8 @@
 			}
 		},
 		components: {
-			VHeader
+			VHeader,
+			VFooter
 		}
 	}
 </script>

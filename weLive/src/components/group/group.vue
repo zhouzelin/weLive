@@ -1,6 +1,6 @@
 <template>
 	<div id="group">
-		<v-header :header="header"></v-header>
+		<v-header :header="header" @rightClick="GroupCreate"></v-header>
 		<div class="section" ref="section">
 			<div>
 				<div class="header-wrapper">
@@ -111,11 +111,13 @@
 				</div>
 			</div>
 		</div>
+		<v-footer></v-footer>
 	</div>
 </template>
 
 <script>
 	import VHeader from '@/components/header/header'
+	import VFooter from '@/components/footer/footer'
 	import BScroll from 'better-scroll'
 
 	export default {
@@ -124,7 +126,8 @@
     	return {
     		header: {
     			title: '圈子',
-    			ricon: 'icon-camera'
+    			ricon: 'icon-camera',
+    			rightGo: '/group/create'
     		},
     		myScroll: null
     	}
@@ -145,10 +148,14 @@
     		}else {
     			this.myScroll.refresh()
     		}
+    	},
+    	GroupCreate() {
+
     	}
     },
     components: {
-    	VHeader
+    	VHeader,
+    	VFooter
     }
 	}
 </script>
